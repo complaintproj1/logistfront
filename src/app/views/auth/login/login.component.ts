@@ -22,7 +22,7 @@ export class LoginComponent {
       "email" : this.address,
       "password" : this.phone
     };
-    this.http.post("http://localhost:8086/user/create",bodyData,{responseType: 'text'}).subscribe((resultData: any)=>
+    this.http.post("https://logistwork.onrender.com/user/create",bodyData,{responseType: 'text'}).subscribe((resultData: any)=>
     {
         console.log(resultData);
         alert("Registered Successfully");
